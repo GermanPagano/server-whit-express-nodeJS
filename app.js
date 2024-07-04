@@ -28,7 +28,7 @@ const alumnos =[
 ]
 
 
-// params
+// params | este solo sirve para traer 1 valor especifico
 app.get('/alumnos/:idAlumno', (req, res)=>{
     let idAlumno = req.params.idAlumno
     let alumno = alumnos.find(e => e.id === idAlumno) 
